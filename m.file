@@ -1,8 +1,12 @@
 fs = 44100; % Sampling frequency (Hz)
+
 duration = 2; % Duration (seconds)
+
 f = 440 * 2^(2/12); % Frequency of the major second interval (Hz)
+
 t = 0:1/fs:duration-1/fs; % Time vector
 % Generate the sound wave with the specified frequency
 y = sin(2*pi*f*t);
 % Play the sound
 sound(y, fs);
+;
